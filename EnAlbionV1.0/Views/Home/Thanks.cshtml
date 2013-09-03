@@ -1,0 +1,21 @@
+﻿@model EnAlbionV1._0.Models.Response
+
+@{
+    
+    ViewBag.Title = "Thanks";
+}
+<div class="text-center">
+<img class="img-rounded" src="~/Content/images/main/top-test.jpg" />
+    </div>
+
+<div class="featurette">
+    <h2 class="featurette-heading">Спасибо, <span class="muted">@Model.Name!</span></h2>
+    @if (Model.WillFeed == true) { 
+    @: <p class="lead">Мы Вам перезвоним по указанному телефону @Model.Phone. Спасибо!</p>
+    }
+    else{
+        @: <p class="lead">Спасибо что записались на пробное занятие. Мы  с Вами свяжимся!</p>
+    }
+    <p class="lead">Текст Вашего сообщения: -  @Model.Comment</p>
+</div>
+@Html.ActionLink("Вернуться на главную", "Index", null, new {@class="btn btn-info", title="Вернуться на главную"}) 

@@ -1,0 +1,385 @@
+﻿@{
+
+    ViewBag.Title = "Index";
+}
+
+
+<div class="text-center">
+    <a data-toggle="modal" href="#obyava" title="Нажмите для получения более детальной информации">
+        <img src="~/Content/images/main/new.jpg" />
+    </a>
+
+
+
+</div>
+<div class="text-left">
+    <h1 class="text-center">Бесплатное занятие</h1>
+    <p class="lead">На бесплатном занятии вы ознакомитесь с методикой преподавания и учебными материалами, зададите все интересующие вас вопросы.</p>
+    <p class="lead">Пожалуйста, @Html.ActionLink("оставьте заявку", "Feedback") на сайте или позвоните по тел. 8 097 917 54 53 или 353-47-43.</p>
+    <h3 class="text-muted">Вы можете также прийти на бесплатную консультацию в любое удобное для вас время по адресам:</h3>
+    <div class="list-group">
+        <a class="list-group-item">Ст.м. Дорогожичи, ул. Олены Телиги 35-Б, офис 1. </a>
+        <a class="list-group-item">Ст.м. Минская, ул. Тимошенко 19, офис 145.</a>
+    </div>
+    <div class="text-center">
+        @Html.ActionLink("Записаться на пробный урок, тестирование", "Feedback", null, new { @class = "btn btn-info" })
+    </div>
+
+</div>
+<div class="lead">
+    <h2>Основная задача Информационного центра "Альбион» — успех каждого! Поэтому в основе учебного процесса лежит индивидуальный подход. </h2>
+    <div class="list-group">
+    <a class="list-group-item active">Мы предлагаем Вам:</a>
+    <a class="list-group-item">Обучение английского, немецкого, и других языков</a>
+    <a class="list-group-item">Дети от 4-х лет, школьники, студенты</a>
+    <a class="list-group-item">быстро и максимально эффективно достигнуть нужных результатов; -многоуровневую программу обучения</a>
+    <a class="list-group-item">индивидуальный подход в обучении</a>
+    <a class="list-group-item">умеренные цены. <span class="glyphicon glyphicon-hand-right"></span> групповые скидки (до 6  человек)</a>
+    <a class="list-group-item">квалифицированных преподавателей</a>
+    <a class="list-group-item">доброжелательную, непринужденную обстановку и творческий характер занятий</a>
+    <a class="list-group-item">совмещение коммуникативной методики с наращиванием грамматической базы</a>
+    </div>
+
+</div>
+<div id="obyava" class="modal fade" aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Запись на пробное зянятие</h4>
+            </div>
+            <div class="modal-body">
+                <img class="ui-corner-all" src="~/Content/images/flaer.jpg" style="width: auto; height: 260px;" />
+                @*<div>
+
+        
+        <h1 class=" text-center"><strong>АНГЛИЙСКИЙ</strong></h1>
+        <h1 class=" text-center"><strong>НЕМЕЦКИЙ ДЛЯ ВСЕХ</strong></h1>
+        <h2 class=" text-center"><strong>350грн/мес-дети 400-Взрослые</strong></h2>
+        <h3 class=" text-center"><strong>@Html.ActionLink("ПРИХОДИТЕ К НАМ!", "Contacts", "Home", null, new {title="Кликните для перехода на страницу контактов" })</strong></h3>
+        <h3 class=" text-center"><strong>Опытные преподаватели! Мини группы!</strong></h3>
+        <h4 class=" text-center"><strong>НАЧИНАТЬ НИКОГДА НЕ ПОЗДНО !</strong></h4>
+        
+
+    </div>
+    <div>
+        <table class="table table-bordered">
+            <tr>
+                <td>
+                    <p class="text-center">
+                        <strong>@Html.ActionLink("Иностранный язык", "Contacts", "Home")<br />
+                            360-70-07<br />
+                            098-904-1381</strong>
+                    </p>
+                </td>
+                <td>
+                    <p class="text-center">
+                        <strong>@Html.ActionLink("Иностранный язык", "Contacts", "Home")<br />
+                            360-70-07<br />
+                            098-904-1381</strong>
+                    </p>
+                </td>
+                <td>
+                    <p class="text-center">
+                        <strong>@Html.ActionLink("Иностранный язык", "Contacts", "Home")<br />
+                            360-70-07<br />
+                            098-904-1381</strong>
+                    </p>
+                </td>
+                <td>
+                    <p class="text-center">
+                        <strong>@Html.ActionLink("Иностранный язык", "Contacts", "Home")<br />
+                            360-70-07<br />
+                            098-904-1381</strong>
+                    </p>
+                </td>
+                
+            </tr>
+        </table>
+    </div> *@
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+
+
+</div>
+
+<hr class="featurette-divider">
+<!-- Three columns of text below the carousel -->
+<div class="row featurette">
+
+    <div class="col-lg-4">
+        <img class="img-circle" src="~/Content/images/index/english-1-1.jpg" width="200" height="200" alt="Для Вас">
+        <h2>Общий курс</h2>
+        <p>Стоимость общего курса для взрослых и студентов:</p>
+
+        <p><a class="btn btn-info" href="#guideline">Узанть подробнее ...<span class="glyphicon glyphicon-user"></span></a></p>
+    </div>
+    <!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+        <img class="img-circle" src="~/Content/images/index/english-2-2.jpg" alt="Для бизнеса">
+        <h2>Для Вашего бизнеса</h2>
+        <p>Стоимость бизнес курса:</p>
+        <p><a class="btn btn-success" href="#business">Понять о чем говорят твои партнеры ...<span class="glyphicon glyphicon-gbp"></span></a></p>
+    </div>
+    <!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+        <img class="img-circle" src="~/Content/images/index/english-3-3.jpg" width="200" height="200" alt="Для детей">
+        <h2>Стоимость курса для детей</h2>
+        <p></p>
+        <p><a class="btn btn-warning" href="#children">Для Вашего ребенка!<span class="glyphicon glyphicon-heart-empty"></span></a></p>
+    </div>
+    <!-- /.col-lg-4 -->
+</div>
+<!-- /.row -->
+
+
+<!-- START THE FEATURETTES -->
+
+<hr class="featurette-divider">
+
+<div class="row featurette" id="guideline">
+    <div class="col-md-7">
+        <h2 class="featurette-heading">Стоимость общего курса <span class="text-muted">для взрослых и студентов:</span></h2>
+        <div>
+            <ul class="nav nav-tabs nav-pills" id="myTab">
+                <li class="active"><a href="#standart" data-toggle="tab">Общий курс</a></li>
+                <li><a href="#intensiv" data-toggle="tab">Интенсивный курс</a></li>
+
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane active" id="standart">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Кол-во человек в группе</th>
+                                <th>Длительность урока</th>
+                                <th>Кол-во занятий в неделю</th>
+                                <th>Стоимость одного месяца (8 занятий)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>4-6</td>
+                                <td>90 мин.</td>
+                                <td>2</td>
+                                <td>600грн/мес</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-pane" id="intensiv">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Кол-во человек в группе</th>
+                                <th>Длительность урока</th>
+                                <th>Кол-во занятий в неделю</th>
+                                <th>Стоимость одного месяца (8 занятий)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>4-6</td>
+                                <td>90 мин.</td>
+                                <td>3</td>
+                                <td>900грн/мес</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <div class="bs-callout bs-callout-info">
+
+            <p class="lead">C уровня Intermediat стоимость  80 грн./час</p>
+            <p class="lead">Индивидуальные занятия для взрослых от 120грн/час </p>
+            <p><span class="glyphicon glyphicon-warning-sign"></span>&nbsp; Внимание цены указаны при оплате полного курса 4.5 месяца. Возможность оплаты двумя платежами 2,5+2 месяца.</p>
+
+        </div>
+    </div>
+    <div class="col-md-5">
+        <img class="featurette-image img-responsive" src="~/Content/images/index/english-1.jpg" alt="Для Вас">
+    </div>
+</div>
+
+<hr class="featurette-divider">
+
+<div class="row featurette" id="business">
+    <div class="col-md-5">
+        <img class="featurette-image img-responsive" src="~/Content/images/index/english-2.jpg" alt="Для бизнеса">
+    </div>
+    <div class="col-md-7">
+        <h2 class="featurette-heading">Стоимость бизнес курса: <span class="text-muted">See for yourself.</span></h2>
+        <div>
+            <ul class="nav nav-tabs nav-pills" id="myTab2">
+                <li class="active"><a href="#standart2" data-toggle="tab">Общий курс</a></li>
+                <li><a href="#intensiv2" data-toggle="tab">Интенсивный курс</a></li>
+
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane active" id="standart2">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Кол-во человек в группе</th>
+                                <th>Длительность урока</th>
+                                <th>Кол-во занятий в неделю</th>
+                                <th>Стоимость одного месяца (8 занятий)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>4-6</td>
+                                <td>90 мин.</td>
+                                <td>2</td>
+                                <td>1200грн/мес</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-pane" id="intensiv2">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Кол-во человек в группе</th>
+                                <th>Длительность урока</th>
+                                <th>Кол-во занятий в неделю</th>
+                                <th>Стоимость одного месяца (8 занятий)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>4-6</td>
+                                <td>90 мин.</td>
+                                <td>3</td>
+                                <td>@Html.ActionLink("Уточняйме у менеджера", "Contacts", "Home")</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr class="featurette-divider">
+
+<div class="row featurette" id="children">
+    <div class="col-md-7">
+        <h2 class="featurette-heading">Стоимость курса <span class="text-muted">для детей:</span></h2>
+        <div>
+            <ul class="nav nav-tabs nav-pills" id="myTab3">
+                <li class="active"><a href="#standart9-11" data-toggle="tab">9-11 классов</a></li>
+                <li><a href="#standart5-8" data-toggle="tab">средней школы 5-8 класс</a></li>
+                <li><a href="#standart1-4" data-toggle="tab">младшей школы</a></li>
+                <li><a href="#standart_from_4" data-toggle="tab">дошкольников с 4-х лет</a></li>
+
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane active" id="standart9-11">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Кол-во человек в группе</th>
+                                <th>Длительность урока</th>
+                                <th>Кол-во занятий в неделю</th>
+                                <th>Стоимость одного месяца (8 занятий)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>4-6</td>
+                                <td>90 мин.</td>
+                                <td>2</td>
+                                <td>600грн/мес</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-pane" id="standart5-8">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Кол-во человек в группе</th>
+                                <th>Длительность урока</th>
+                                <th>Кол-во занятий в неделю</th>
+                                <th>Стоимость одного месяца (8 занятий)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>4-6</td>
+                                <td>60 мин.</td>
+                                <td>2</td>
+                                <td>400грн/мес</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-pane" id="standart1-4">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Кол-во человек в группе</th>
+                                <th>Длительность урока</th>
+                                <th>Кол-во занятий в неделю</th>
+                                <th>Стоимость одного месяца (8 занятий)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>4-6</td>
+                                <td>60 мин.</td>
+                                <td>2</td>
+                                <td>400грн/мес</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-pane" id="standart_from_4">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Кол-во человек в группе</th>
+                                <th>Длительность урока</th>
+                                <th>Кол-во занятий в неделю</th>
+                                <th>Стоимость одного месяца (8 занятий)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>4-6</td>
+                                <td>60 мин.</td>
+                                <td>2</td>
+                                <td>350грн/мес</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-5">
+        <img class="featurette-image img-responsive" src="~/Content/images/index/english-3.jpg" alt="Для детей">
+    </div>
+</div>
+
+<hr class="featurette-divider">
+
+<!-- /END THE FEATURETTES -->
+
+
+
+

@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Contacts";
+}
+<div class="text-left">
+<h2>Как нас найти</h2>
+<address>
+    <strong>Киев</strong><br>
+    Спасская ул., 6А‎
+    <br>
+    (Подол)<br>
+    <abbr title="Наши телефоны">tel:</abbr>(044) 360−70−07 моб. (050) 443-55-56 (098) 904−13−81
+</address>
+
+<address>
+    <strong>e-mail:</strong><br>
+    <a href="mailto:info@englishalbion.com.ua">info@englishalbion.com.ua</a> <br />
+    @Html.ActionLink("Записаться на пробный урок, тестирование", "Feedback", null, new {@class="btn btn-info"})
+</address>
+
+<div id="map" style="width: 640px; height: 480px; margin:5% 20%"> </div>
+
+</div>
+
