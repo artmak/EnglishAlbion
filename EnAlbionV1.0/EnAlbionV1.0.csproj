@@ -109,6 +109,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NewsController.cs" />
+    <Compile Include="Controllers\SchoolController.cs" />
     <Compile Include="Controllers\ServiceController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -156,7 +158,9 @@
     <Content Include="Content\images\index\english-1.jpg" />
     <Content Include="Content\images\index\english-3-3.jpg" />
     <Content Include="Content\images\logo.jpg" />
+    <Content Include="Content\images\main\easier-to-speak-with-native-english-speakers.jpg" />
     <Content Include="Content\images\main\new.jpg" />
+    <Content Include="Content\images\main\page-business-english-overview.jpg" />
     <Content Include="Content\images\main\top-adult.jpg" />
     <Content Include="Content\images\main\top-advantages.jpg" />
     <Content Include="Content\images\main\top-booking.jpg" />
@@ -172,7 +176,10 @@
     <Content Include="Content\images\main\vno_long.jpg" />
     <Content Include="Content\images\main\wordle_TOEFL.png" />
     <Content Include="Content\js\gmaps.js" />
+    <Content Include="Content\js\TextIllate\jquery.fittext.js" />
+    <Content Include="Content\js\TextIllate\jquery.lettering.js" />
     <Content Include="Content\js\jquery.sticky.js" />
+    <Content Include="Content\js\TextIllate\jquery.textillate.js" />
     <Content Include="Content\MainStyle.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -216,6 +223,9 @@
     <Content Include="Views\Service\SummerIntensive.cshtml" />
     <Content Include="Views\Service\Training.cshtml" />
     <Content Include="Views\Service\IntTraining.cshtml" />
+    <Content Include="Views\School\English.cshtml" />
+    <Content Include="Views\School\English_business_rates.cshtml" />
+    <Content Include="Views\News\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
