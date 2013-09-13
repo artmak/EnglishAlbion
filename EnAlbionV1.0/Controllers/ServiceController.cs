@@ -37,6 +37,10 @@ namespace EnAlbionV1._0.Controllers
             ViewBag.TOEFL = "Test of English as a Foreign Language";
             return View();
         }
+        public ActionResult Photo() 
+        {
+            return View();
+        }
 
     }
 }

@@ -143,6 +143,7 @@
     <Content Include="Content\bootstrap\js\respond.min.js" />
     <Content Include="Content\bootstrap\js\uglify.js" />
     <Content Include="Content\bootstrap\carousel.css" />
+    <Content Include="Content\images\albion.jpg" />
     <Content Include="Content\images\carousel\01.jpg" />
     <Content Include="Content\images\carousel\02.jpg" />
     <Content Include="Content\images\carousel\03.jpg" />
@@ -175,6 +176,21 @@
     <Content Include="Content\images\flaer.jpg" />
     <Content Include="Content\images\main\vno_long.jpg" />
     <Content Include="Content\images\main\wordle_TOEFL.png" />
+    <Content Include="Content\images\other\china-obuchenie.jpg" />
+    <Content Include="Content\images\other\courses.jpg" />
+    <Content Include="Content\images\other\images_ch.jpg" />
+    <Content Include="Content\images\other\images.jpeg" />
+    <Content Include="Content\images\photo\100_0942.JPG" />
+    <Content Include="Content\images\photo\110_0039-300x225.jpg" />
+    <Content Include="Content\images\photo\110_00442-300x225.jpg" />
+    <Content Include="Content\images\photo\110_00821-300x225.jpg" />
+    <Content Include="Content\images\photo\44image.jpeg" />
+    <Content Include="Content\images\photo\i6ge.jpeg" />
+    <Content Include="Content\images\photo\im34age.jpeg" />
+    <Content Include="Content\images\photo\IMG_24282.jpg" />
+    <Content Include="Content\images\photo\IMG_24523.jpg" />
+    <Content Include="Content\images\photo\IMG_2545.JPG" />
+    <Content Include="Content\images\photo\IMG_2438.JPG" />
     <Content Include="Content\js\gmaps.js" />
     <Content Include="Content\js\TextIllate\jquery.fittext.js" />
     <Content Include="Content\js\TextIllate\jquery.lettering.js" />
@@ -226,6 +242,10 @@
     <Content Include="Views\School\English.cshtml" />
     <Content Include="Views\School\English_business_rates.cshtml" />
     <Content Include="Views\News\Index.cshtml" />
+    <Content Include="Views\School\German.cshtml" />
+    <Content Include="Views\School\Chinese.cshtml" />
+    <Content Include="Views\Service\Photo.cshtml" />
+    <Content Include="Views\School\French.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

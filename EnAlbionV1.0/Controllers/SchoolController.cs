@@ -24,5 +24,17 @@ namespace EnAlbionV1._0.Controllers
         {
             return View();
         }
+        public ActionResult German()
+        {
+            return View();
+        }
+        public ActionResult Chinese() 
+        {
+            return View();
+        }
+        public ActionResult French() 
+        {
+            return View();
+        }
     }
 }

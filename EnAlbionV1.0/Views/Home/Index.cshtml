@@ -6,7 +6,7 @@
 
 <div class="text-center">
     <a data-toggle="modal" href="#obyava" title="Нажмите для получения более детальной информации">
-        <img src="~/Content/images/main/new.jpg" />
+        <img class="ui-corner-all"  src="~/Content/images/main/new.jpg" />
     </a>
 
 
@@ -14,8 +14,8 @@
 </div>
 <div class="text-left">
     <h1 class="text-center">Бесплатное занятие</h1>
-    <p class="lead">На бесплатном занятии вы ознакомитесь с методикой преподавания и учебными материалами, зададите все интересующие вас вопросы.</p>
-    <p class="lead">Пожалуйста, @Html.ActionLink("оставьте заявку", "Feedback") на сайте или позвоните по тел. 8 097 917 54 53 или 353-47-43.</p>
+    <p class="">На бесплатном занятии вы ознакомитесь с методикой преподавания и учебными материалами, зададите все интересующие вас вопросы.</p>
+    <p class="">Пожалуйста, @Html.ActionLink("оставьте заявку", "Feedback") на сайте или @Html.ActionLink("позвоните", "Contacts", "Home").</p>
     <h3 class="text-muted">Вы можете также прийти на бесплатную консультацию в любое удобное для вас время по адресам:</h3>
     <div class="list-group">
         <a class="list-group-item">
@@ -31,10 +31,11 @@
     </div>
     <div class="text-center">
         @Html.ActionLink("Записаться на пробный урок, тестирование", "Feedback", null, new { @class = "btn btn-info" })
+        
     </div>
 
 </div>
-<div class="lead">
+<div class="">
     <h2>Основная задача Информационного центра "Альбион» — успех каждого! Поэтому в основе учебного процесса лежит индивидуальный подход. </h2>
     <div class="list-group">
         <a class="list-group-item active">Мы предлагаем Вам:</a>
@@ -57,7 +58,7 @@
                 <h4 class="modal-title">Запись на пробное зянятие</h4>
             </div>
             <div class="modal-body">
-                <img class="ui-corner-all" src="~/Content/images/flaer.jpg" style="width: auto; height: 260px;" />
+                <img class="ui-corner-all"  src="~/Content/images/flaer.jpg" style="width: auto; height: 260px;" />
                 @*<div>
 
         
@@ -208,8 +209,8 @@
         </div>
         <div class="bs-callout bs-callout-info">
 
-            <p class="lead">C уровня Intermediat стоимость  80 грн./час</p>
-            <p class="lead">Индивидуальные занятия для взрослых от 120грн/час </p>
+            <p class="">C уровня Intermediat стоимость  80 грн./час</p>
+            <p class="">Индивидуальные занятия для взрослых от 120грн/час </p>
             <p><span class="glyphicon glyphicon-warning-sign"></span>&nbsp; Внимание цены указаны при оплате полного курса 4.5 месяца. Возможность оплаты двумя платежами 2,5+2 месяца.</p>
 
         </div>

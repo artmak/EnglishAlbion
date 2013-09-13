@@ -25,6 +25,7 @@
     <link href="~/Content/MainStyle.css" rel="stylesheet" />
 
     <link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
+    
 </head>
 <!-- NAVBAR
 ================================================== -->
@@ -40,16 +41,17 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        @Html.ActionLink("Главная", "Index", "Home", null, new { @class = "navbar-brand" })
+                        @Html.ActionLink("Главная", "About", "Home", null, new { @class = "navbar-brand" })
                     </div>
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
-                            <li class="active">@Html.ActionLink("Стоимость", "Index", "Home", null, new { title = "Стоимость наших услуг" })</li>
+                            <li>@Html.ActionLink("Стоимость", "Index", "Home")</li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Услуги <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li>@Html.ActionLink("Наша методика", "OurMethods", "Service", null, new { title = "Наша методика" })</li>
-                                    <li>@Html.ActionLink("Из чего состоят занатия", "OurClasses", "Service", null, new { title = "Из чего состоят наши занатия" })</li>
+                                    <li>@Html.ActionLink("Наша методика", "OurMethods", "Service")</li>
+                                    <li>@Html.ActionLink("Из чего состоят занатия", "OurClasses", "Service")</li>
+                                    <li>@Html.ActionLink("Фото", "Photo", "Service")</li>
                                     @*<li class="divider"></li>
                                     <li class="dropdown-header" title="Групповые занятия">Групповые занятия</li>
                                     <li><a href="/group/adult.html" title="Для взрослых">Для взрослых</a></li>
@@ -59,22 +61,23 @@
                                     <li><a href="/individual/adult.html" class="first" title="Для взрослых"><span>Для взрослых</span></a></li>
                                     <li><a href="/individual/teens.html" class="last" title="Для детей"><span>Для детей</span></a></li>*@
                                     <li class="divider"></li>
-                                    <li>@Html.ActionLink("Корпоративное обучение", "Training", "Service", null, new { title = "Корпоративное обучение" })</li>
-                                    <li>@Html.ActionLink("Летний интенсив", "SummerIntensive", "Service", null, new { title = "Летний интенсив" })</li>
-                                    <li>@Html.ActionLink("Подготовка к ВНО, ВУЗ, TOEFL", "IntTraining", "Service", null, new { title = "Подготовка к ВНО, ВУЗ, TOEFL" })</li>
+                                    <li>@Html.ActionLink("Корпоративное обучение", "Training", "Service")</li>
+                                    <li>@Html.ActionLink("Летний интенсив", "SummerIntensive", "Service")</li>
+                                    <li>@Html.ActionLink("Подготовка к ВНО, ВУЗ, TOEFL", "IntTraining", "Service")</li>
                                     @*<li><a href="/club.html" class="last" title="Разговорный клуб"><span>Разговорный клуб</span></a></li>*@
 
                                 </ul>
                             </li>
                             <li>@Html.ActionLink("Новости", "Index", "News")</li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Языковые школы<b class="caret"></b></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Языки<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li>@Html.ActionLink("Английский", "English", "School")</li>
-                                    @*<li><a href="#">Немецкий</a></li>
-                                    <li><a href="#">Французский</a></li>
-                                    <li><a href="#">Китайский</a></li>
-                                    <li class="divider"></li>
+                                    <li>@Html.ActionLink("Немецкий", "German", "School")</li>
+                                    
+                                    <li>@Html.ActionLink("Китайский", "Chinese", "School")</li>
+                                   <li>@Html.ActionLink("Французский","French", "School")</li>
+                                    @* <li class="divider"></li>
                                     <li class="dropdown-header">Для клиентов</li>
                                     <li><a href="#">Корпоративное обучение</a></li>
                                     <li><a href="#">Скидки</a></li>
@@ -117,7 +120,7 @@
         </ol>
         <div class="carousel-inner">
             <div class="item active">
-                <img src="~/Content/images/carousel/01.jpg" />
+                <img src="~/Content/images/albion.jpg" style="height: 295px !important; margin-top: 115px !important"/>
                 @*<div class="container">
                     <div class="carousel-caption">
                         <h1>Example headline.</h1>
@@ -125,6 +128,17 @@
                         <p><a class="btn btn-large btn-primary" href="#">Sign up today</a></p>
                     </div>
                 </div>*@
+            </div>
+            <div class="item">
+                <img src="~/Content/images/carousel/01.jpg" />
+                <div class="container">
+                    <div class="carousel-caption" style="color: #000 !important;">
+                        <h1>ВНИМАНИЕ! СПЕШИТЕ ЗАПИСАТЬСЯ ДО 18/09</h1>
+                        <p>Будешь учиться за 50грн/60 мин. Получишь скидку 10%. </p>
+                        <p>@Html.ActionLink("Записаться","Feedback","Home", null, new {@class="btn btn-large btn-primary"})</p>
+                    </div>
+                </div>
+
             </div>
             <div class="item">
                 <img src="~/Content/images/carousel/02.jpg" />
