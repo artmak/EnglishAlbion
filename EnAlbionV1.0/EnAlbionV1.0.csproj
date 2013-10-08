@@ -116,6 +116,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Response.cs" />
+    <Compile Include="Models\_TestPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -178,6 +179,8 @@
     <Content Include="Content\images\main\wordle_TOEFL.png" />
     <Content Include="Content\images\other\china-obuchenie.jpg" />
     <Content Include="Content\images\other\courses.jpg" />
+    <Content Include="Content\images\other\france.jpg" />
+    <Content Include="Content\images\other\france1.jpg" />
     <Content Include="Content\images\other\images_ch.jpg" />
     <Content Include="Content\images\other\images.jpeg" />
     <Content Include="Content\images\photo\100_0942.JPG" />
@@ -191,6 +194,8 @@
     <Content Include="Content\images\photo\IMG_24523.jpg" />
     <Content Include="Content\images\photo\IMG_2545.JPG" />
     <Content Include="Content\images\photo\IMG_2438.JPG" />
+    <Content Include="Content\images\social\Facebook_logo_%28square%29.png" />
+    <Content Include="Content\images\social\VKontakte.svg.png" />
     <Content Include="Content\js\gmaps.js" />
     <Content Include="Content\js\TextIllate\jquery.fittext.js" />
     <Content Include="Content\js\TextIllate\jquery.lettering.js" />
@@ -246,6 +251,12 @@
     <Content Include="Views\School\Chinese.cshtml" />
     <Content Include="Views\Service\Photo.cshtml" />
     <Content Include="Views\School\French.cshtml" />
+    <Content Include="Views\Home\Vacancy.cshtml" />
+    <Content Include="Views\School\_TestPage.cshtml" />
+    <Content Include="Views\School\TestPage.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\ResponseItem.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\EditT.cshtml" />
+    <Content Include="Views\Shared\Feedback.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -3,13 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Сайт EnglishAlbion">
+    <meta name="description" content="Сайт языковых школ EnglishAlbion">
     <meta name="author" content="Vadym Makarenko">
+    <meta name="keywords" content="Курсы английского языка, английский на Подоле, английский для начинающих, школа английского языка в Киеве, курсы иностранных языков в Киеве, иностранные языки на Подоле, английский обучение, английский разговорный, английский киев, разговорный английский киев, курсы немецкого, немецкий на Подоле, английский для детей, уровни английского, английский для школьников, скидка английский, грамматика английского языка, обучение английского языка, язык с нуля, английский для самых маленьких, английский акции, английский для дошкольников, китайский на подоле, обучение китайского, Китайский на Подоле" />
     <meta name="google-site-verification" content="4CtLp8JU-chbtcSWx1l9K-CjVWFV-1i3CtHRNula3n8" />
     <meta name='yandex-verification' content='6e23d3b060a11a83' />
     <link rel="shortcut icon" href="@Url.Content("~/Content/images/ico/favicon.png")">
 
-    <title>Albion - Информационный центр</title>
+    <title>@ViewBag.Title - English Albion - Информационный центр</title>
     <link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" />
     <!-- Bootstrap core CSS -->
     <link href="~/Content/bootstrap/css/bootstrap.css" rel="stylesheet" />
@@ -25,7 +26,6 @@
     <link href="~/Content/MainStyle.css" rel="stylesheet" />
 
     <link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
-    
 </head>
 <!-- NAVBAR
 ================================================== -->
@@ -74,9 +74,9 @@
                                 <ul class="dropdown-menu">
                                     <li>@Html.ActionLink("Английский", "English", "School")</li>
                                     <li>@Html.ActionLink("Немецкий", "German", "School")</li>
-                                    
+
                                     <li>@Html.ActionLink("Китайский", "Chinese", "School")</li>
-                                   <li>@Html.ActionLink("Французский","French", "School")</li>
+                                    <li>@Html.ActionLink("Французский", "French", "School")</li>
                                     @* <li class="divider"></li>
                                     <li class="dropdown-header">Для клиентов</li>
                                     <li><a href="#">Корпоративное обучение</a></li>
@@ -95,7 +95,9 @@
                                     <li><a href="#">ЗНО</a></li>
                                 </ul>
                             </li>*@
+                            <li>@Html.ActionLink("Пройти тестирование", "TestPage", "School")</li>
                             <li>@Html.ActionLink("Контакты", "Contacts", "Home")</li>
+                            <li>@Html.ActionLink("Вакансии", "Vacancy", "Home")</li>
                         </ul>
                     </div>
                 </div>
@@ -120,45 +122,65 @@
         </ol>
         <div class="carousel-inner">
             <div class="item active">
-                <img src="~/Content/images/albion.jpg" style="height: 295px !important; margin-top: 115px !important"/>
-                @*<div class="container">
-                    <div class="carousel-caption">
-                        <h1>Example headline.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-large btn-primary" href="#">Sign up today</a></p>
+                <img src="~/Content/images/carousel/02.jpg" />
+                <div class="container">
+                    <div class="carousel-caption" >
+                        
+
+                        <h1 style="color: #ff6a00 !important; font-weight: bolder !important;">АКЦИЯ!!!</h1>
+                        <p style="font-weight: bolder !important;"><b>ИДЕТ НАБОР В ГРУППЫ</b></p>
+                        <p style="font-weight: bolder !important;"><b>БИЗНЕС КУРС С НОСИТЕЛЕМ ЯЗЫКА</b></p>
+                        <p style="font-weight: bolder !important;"><a class="btn btn-lg btn-warning" href="@Url.Action("Index","News")" style="color: #b200ff !important;">Запишись сейчас и будешь заниматься 620 грн вместо <s>850грн/месяц</s></a></p>
                     </div>
-                </div>*@
+                </div>
             </div>
             <div class="item">
-                <img src="~/Content/images/carousel/01.jpg" />
+                <img src="~/Content/images/albion.jpg" style="height: 295px !important; margin-top: 115px !important" />
                 <div class="container">
-                    <div class="carousel-caption" style="color: #000 !important;">
-                        <h1>ВНИМАНИЕ! СПЕШИТЕ ЗАПИСАТЬСЯ ДО 18/09</h1>
-                        <p>Будешь учиться за 50грн/60 мин. Получишь скидку 10%. </p>
-                        <p>@Html.ActionLink("Записаться","Feedback","Home", null, new {@class="btn btn-large btn-primary"})</p>
+                    <div class="carousel-caption" style="color: #000 !important; text-align: left; font-size: 20pt;">
+                        <address>
+                            <strong>Киев</strong>
+                            <br />
+                            ул. Спасская, 6А‎
+                            <br />
+                            (Подол)
+                            <br />
+                            <abbr title="Наш городской телефон"><span class="glyphicon glyphicon-phone-alt" style="font-size: 10pt;"></span> tel:</abbr>
+                            (044) 360−70−07  <br />
+                            <abbr title="Наши мобильные телефоны"><span class="glyphicon glyphicon-earphone" style="font-size: 10pt;"></span> mob:</abbr>
+                            (050) 443-55-56<br /> (098) 904−13−81
+                        </address>
+                        <p>@Html.ActionLink("Записаться на занятие", "Feedback", "Home", null, new { @class = "btn btn-lg btn-primary" })</p>
+
+
                     </div>
                 </div>
 
             </div>
             <div class="item">
-                <img src="~/Content/images/carousel/02.jpg" />
-                @*<div class="container">
-                    <div class="carousel-caption">
-                        <h1>Another example headline.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-large btn-primary" href="#">Learn more</a></p>
+                <img src="~/Content/images/carousel/01.jpg" />
+                <div class="container">
+                    <div class="carousel-caption" style="color: #000 !important;">
+                        <h1 >ВНИМАНИЕ! НОВЫЙ НАБОР В МИНИ ГРУППЫ С НОСИТЕЛЕМ ЯЗЫКА.</h1>
+                        <p>СПЕШИТЕ ЗАПИСАТЬСЯ ДО 07/10!</p>
+                        <p>@Html.ActionLink("Записаться", "Feedback", "Home", null, new { @class = "btn btn-lg btn-primary" })</p>
                     </div>
-                </div>*@
+                </div>
+
             </div>
+            
             <div class="item">
                 <img src="~/Content/images/carousel/03.jpg" />
-                @*<div class="container">
-                    <div class="carousel-caption">
-                        <h1>One more for good measure.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-large btn-primary" href="#">Browse gallery</a></p>
+                <div class="container">
+                    <div class="carousel-caption" >
+                        
+
+                        <h1 style="color: #ff6a00 !important; font-weight: bolder !important;">АКЦИЯ!!!</h1>
+                        <p style="font-weight: bolder !important;"><b>ИДЕТ НАБОР В ГРУППЫ</b></p>
+                        <p style="font-weight: bolder !important;"><b>БИЗНЕС КУРС С НОСИТЕЛЕМ ЯЗЫКА</b></p>
+                        <p style="font-weight: bolder !important;"><a class="btn btn-lg btn-warning" href="@Url.Action("Index","News")" style="color: #b200ff !important;">Запишись сейчас и будешь заниматься 620 грн вместо <s>850грн/месяц</s></a></p>
                     </div>
-                </div>*@
+                </div>
             </div>
             @*<div class="item">
                 <img src="~/Content/images/carousel/03.jpg" />
@@ -172,9 +194,30 @@
             </div>*@
             <div class="item">
                 <img src="~/Content/images/main/top-club.jpg" />
+                <div class="container">
+                    <div class="carousel-caption" >
+                        
+
+                        <h1 style="color: #ff6a00 !important; font-weight: bolder !important;">АКЦИЯ!!!</h1>
+                        <p style="font-weight: bolder !important;"><b>ИДЕТ НАБОР В ГРУППЫ</b></p>
+                        <p style="font-weight: bolder !important;"><b>БИЗНЕС КУРС С НОСИТЕЛЕМ ЯЗЫКА</b></p>
+                        <p style="font-weight: bolder !important;"><a class="btn btn-lg btn-warning" href="@Url.Action("Index","News")" style="color: #b200ff !important;">Запишись сейчас и будешь заниматься 620 грн вместо <s>850грн/месяц</s></a></p>
+                    </div>
+                </div>
             </div>
             <div class="item">
-                <img src="~/Content/images/main/top-diploma.jpg" /></div>
+                <img src="~/Content/images/main/top-diploma.jpg" />
+                <div class="container">
+                    <div class="carousel-caption" >
+                        
+
+                        <h1 style="color: #ff6a00 !important; font-weight: bolder !important;">АКЦИЯ!!!</h1>
+                        <p style="font-weight: bolder !important;"><b>ИДЕТ НАБОР В ГРУППЫ</b></p>
+                        <p style="font-weight: bolder !important;"><b>БИЗНЕС КУРС С НОСИТЕЛЕМ ЯЗЫКА</b></p>
+                        <p style="font-weight: bolder !important;"><a class="btn btn-lg btn-warning" href="@Url.Action("Index","News")" style="color: #b200ff !important;">Запишись сейчас и будешь заниматься 620 грн вместо <s>850грн/месяц</s></a></p>
+                    </div>
+                </div>
+            </div>
 
 
 
@@ -199,7 +242,7 @@
         <!-- FOOTER -->
         <footer>
             <p class="pull-right floating"><a id="btop" href="#" class="btn btn-inverse">Back to top</a></p>
-            <p style="font-family: 'Pathway Gothic One', sans-serif;">&copy;  Содан комапнией ArtMakarenko в 2013. Созан на <a href="http://www.asp.net/get-started" class="btn btn-info btn-xs">ASP.Net MVC 4.0</a></p>
+            <p style="font-family: 'Pathway Gothic One', sans-serif;">&copy;  Содан комапнией <a href="https://plus.google.com/100082264739809883836?rel=author" target="_blank">ArtMakarenko</a> в 2013. Созан на <a href="http://www.asp.net/get-started" class="btn btn-info btn-xs">ASP.Net MVC 4.0</a></p>
             <!-- Yandex.Metrika informer -->
             <a href="http://metrika.yandex.ru/stat/?id=22235176&amp;from=informer"
                 target="_blank" rel="nofollow">
@@ -240,6 +283,8 @@
                 </div>
             </noscript>
             <!-- /Yandex.Metrika counter -->
+            <a href="https://www.facebook.com/profile.php?id=100002274157194" target="_blank" title="Мы на facebook"><img src="~/Content/images/social/Facebook_logo_(square).png" width="40" height="40" /></a>
+            <a href="http://vk.com/id117943839" target="_blank" title="Найти нас ВКонтакте"><img src="~/Content/images/social/VKontakte.svg.png" height="40" /></a>
         </footer>
 
     </div>
@@ -277,6 +322,18 @@
                         .addClass(feedback.horizontal)
                         .appendTo(this);
                     }
+                }
+            });
+            $("input:checkbox").click(function ()
+            {
+                if ($(this).is(":checked")) {
+                    //var group = "input:checkbox[name='" + $(this).attr("name") + "']";
+                    var group = "input:checkbox[data-group='" + $(this).attr("data-group") + "']";
+
+                    $(group).prop("checked", false);
+                    $(this).prop("checked", true);
+                } else {
+                    $(this).prop("checked", false);
                 }
             });
             //GoogleMap on contacts

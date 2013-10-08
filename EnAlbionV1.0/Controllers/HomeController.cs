@@ -24,6 +24,10 @@ namespace EnAlbionV1._0.Controllers
         {
             return View();
         }
+        public ActionResult Vacancy()
+        {
+            return View();
+        }
         
     [HttpGet]
         public ViewResult Feedback() 

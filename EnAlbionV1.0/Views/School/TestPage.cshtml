@@ -1,0 +1,100 @@
+﻿@model EnAlbionV1._0.Models.Response
+
+@{
+    ViewBag.Title = "Пройти тестирование на нашем сайте - пока не работает в автоматическом режиме!";
+}
+
+<h2>@ViewBag.Title</h2>
+@Html.ActionLink("Отправьте нам сообщение с указанием правильних ответов", "Feedback", "Home", null, new {@class="btn btn-lage btn-info" })
+<div class="lead">
+    
+<p>Вы выбрали тест на уровень английского языка.</p>
+<p>Для того, чтобы пройти тест, Вам нужно ответить на вопросы.</p>
+<p>На каждый вопрос есть только один вариант ответа.</p>
+<p>За каждый правильный ответ вы получаете 1 бал. Максимальное количество баллов, которые можно получить - 24.</p>
+<p>После чего укажите в графе Ваше имя, электронную почту и нажмите кнопку «отправить тест».</p>
+<p>В течение 24 - х часов Вам придет ответ на тест с указанием скидки на обучение в нашем центре.</p>
+<p>Желаем удачи!</p>
+    </div>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    
+    <div class="form-group" style="display: none">
+        <label>Имя:</label>
+        <div class="input-group">
+            <span class="input-group-addon glyphicon glyphicon-user"></span>
+        @Html.TextBox("Name", null, new { @class = "form-control", placeholder = "Введите Ваше Имя" })
+            </div>
+        <label>Email:</label>
+        @Html.TextBox("Email", null, new { @class = "form-control", placeholder = "Введите email" })
+        <label>Телефон:</label>
+        @Html.TextBox("Phone", null, new { @class = "form-control", placeholder = "Введите номер телефона " })
+        <label>Комментарии:</label>
+        @Html.TextArea("Comment", new { @class = "form-control", rows = "6" })
+        <label>Ваш выбор:</label>
+        @Html.DropDownList("WillFeed", new[] {
+            new SelectListItem() {Text="Заказать обратный звонок", Value=bool.TrueString},
+            new SelectListItem() {Text="Записаться на занятие", Value=bool.FalseString}
+            }, "Выбрать нужное")
+    </div>
+    
+    @Html.Partial("Feedback")
+    
+    
+    
+    
+
+    @*<fieldset>
+        <legend>@ViewBag.Title</legend>
+
+        <label>
+            @Html.LabelFor(model => model.Name)
+        </label>
+        @Html.EditorFor(model => model.Name, new {@class = "form-control", placeholder = "Введите Ваше Имя" }})
+        @Html.ValidationMessageFor(model => model.Name)
+        <label>
+            @Html.LabelFor(model => model.Email)
+        </label>
+        @Html.EditorFor(model => model.Email, new {@class = "form-control", placeholder = "Введите email" })
+        @Html.ValidationMessageFor(model => model.Email)
+        <label>
+            @Html.LabelFor(model => model.Phone)
+        </label>
+        @Html.EditorFor(model => model.Phone, new {  @class = "form-control", placeholder = "Введите номер телефона "})
+        @Html.ValidationMessageFor(model => model.Phone)
+        <label>
+            @Html.LabelFor(model => model.Comment)
+        </label>
+        @Html.EditorFor(model => model.Comment, new { @class = "form-control", rows = "6" } )
+
+        <label>
+            @Html.LabelFor(model => model.WillFeed)
+        </label>
+        <div class="form-control">
+            @Html.EditorFor(model => model.WillFeed)
+            @Html.ValidationMessageFor(model => model.WillFeed)
+        </div>
+        <h1>Тестирование пробное.</h1>
+        <h2>Отметьте правильный вариант ответа.</h2>
+        <div>
+            @Html.EditorFor(m=>m.Answers)
+        </div>
+        <p>
+            <input type="submit" value="Отправить на проверку" class="btn btn-lage" />
+        </p>
+    </fieldset>*@
+   <h1>Тестирование пробное.</h1>
+   <h2>Отметьте правильный вариант ответа.</h2>
+
+    <div>
+       @Html.EditorFor(m=>m.Answers)
+    </div>
+    
+    <input type="submit" value="Отправить тест" class="btn btn-lage" />
+}
+
+
+
+

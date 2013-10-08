@@ -1,6 +1,6 @@
 ﻿@{
 
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Стоимость языковых курсов в языковой школе EnglishAlbion";
 }
 
 
@@ -160,6 +160,7 @@
             <ul class="nav nav-tabs nav-pills" id="myTab">
                 <li class="active"><a href="#standart" data-toggle="tab">Общий курс</a></li>
                 <li><a href="#intensiv" data-toggle="tab">Интенсивный курс</a></li>
+                <li><a href="#weekend" data-toggle="tab">Курс выходного дня</a></li>
 
             </ul>
 
@@ -204,7 +205,26 @@
                         </tbody>
                     </table>
                 </div>
-
+                <div class="tab-pane" id="weekend">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Кол-во человек в группе</th>
+                                <th>Длительность урока</th>
+                                <th>Кол-во занятий в неделю</th>
+                                <th>Стоимость одного месяца (8 занятий)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>4-6</td>
+                                <td>90 мин.</td>
+                                <td>1</td>
+                                <td>400грн/мес</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
         <div class="bs-callout bs-callout-info">

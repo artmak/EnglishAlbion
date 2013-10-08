@@ -1,0 +1,36 @@
+﻿@model EnAlbionV1._0.Models.Response
+
+
+@{
+    
+    ViewBag.Title = "Записаться на пробный урок, тестирование";
+}
+<div class="text-center">
+<img class="img-rounded" src="~/Content/images/main/top-booking.jpg" style="display: none"/>
+    </div>
+<h2>@ViewBag.Title</h2>
+
+
+@using (Html.BeginForm("Feedback", "Home", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.ValidationSummary()
+    <div class="form-group">
+        <label>Имя:</label>
+        <div class="input-group">
+            <span class="input-group-addon glyphicon glyphicon-user"></span>
+        @Html.TextBox("Name", null, new { @class = "form-control", placeholder = "Введите Ваше Имя" })
+            </div>
+        <label>Email:</label>
+        @Html.TextBox("Email", null, new { @class = "form-control", placeholder = "Введите email" })
+        <label>Телефон:</label>
+        @Html.TextBox("Phone", null, new { @class = "form-control", placeholder = "Введите номер телефона " })
+        <label>Комментарии:</label>
+        @Html.TextArea("Comment", new { @class = "form-control", rows = "6" })
+        <label>Ваш выбор:</label>
+        @Html.DropDownList("WillFeed", new[] {
+            new SelectListItem() {Text="Заказать обратный звонок", Value=bool.TrueString},
+            new SelectListItem() {Text="Записаться на занятие", Value=bool.FalseString}
+            }, "Выбрать нужное")
+    </div>
+    <input type="submit" value="Отпарвить" class="btn" />
+}
