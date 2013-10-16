@@ -1,0 +1,126 @@
+﻿@model EnAlbionV1._0.Models.TPage
+@{
+    ViewBag.Title = "Пройти тестирование на нашем сайте";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<p>Вы выбрали тест на уровень английского языка.</p>
+<p>Для того, чтобы пройти тест, Вам нужно ответить на вопросы.</p>
+<p>На каждый вопрос есть только один вариант ответа.</p>
+<p>За каждый правильный ответ вы получаете 1 бал. Максимальное количество баллов, которые можно получить - 24.</p>
+<p>На прохождение теста дается 30 минут, после чего укажите в графе Ваше имя, электронную почту и нажмите кнопку «отправить тест».</p>
+<p>В течение 24 - х часов Вам придет ответ на тест с указанием скидки на обучение в нашем центре.</p>
+<p>Желаем удачи!</p>
+
+@using (Html.BeginForm("T_Page", "School", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.ValidationSummary()
+    <div class="form-group">
+        <label>Имя:</label>
+        <div class="input-group">
+            <span class="input-group-addon glyphicon glyphicon-user"></span>
+            @Html.TextBox("Name", null, new { @class = "form-control", placeholder = "Введите Ваше Имя" })
+        </div>
+        <label>Email:</label>
+        @Html.TextBox("Email", null, new { @class = "form-control", placeholder = "Введите email" })
+        <label>Телефон:</label>
+        @Html.TextBox("Phone", null, new { @class = "form-control", placeholder = "Введите номер телефона " })
+        <label>Комментарии:</label>
+        @Html.TextArea("Comment", new { @class = "form-control", rows = "1" })
+        <label>Ваш выбор:</label>
+        
+        <h2>Тестирование пробное.</h2>
+        <h3>Впишите букву правильного варианта ответа.</h3>
+        <label>1. Because the first pair of shoes did not fit properly, he asked for ... </label>
+        <p>a. another pants b. other pants c. the other ones d. another pair</p>
+        @Html.TextArea("Comment1", new { @class = "form-control", rows = "1" })
+        <label>2. ... many computer software programs that possess excellent word-processing capabilities.</label>
+        <p>a. There are b. The c. There is a lot of d. Some</p>
+        @Html.TextArea("Comment2", new { @class = "form-control", rows = "1" })
+        <label>3. Woodrow Wilson believed the United States' entry into World War I would ... the war in months.</label>
+        <p>a. to finish b. finish c. finishing d. will have finished</p>
+        @Html.TextArea("Comment3", new { @class = "form-control", rows = "1" })
+        <label>4. ... of New York's Erie Canal greatly enhanced trade in the upstate region.</label>
+        <p>a. The complete b. Completing c. A completing d. The completion</p>
+        @Html.TextArea("Comment4", new { @class = "form-control", rows = "1" })
+        <label>5. Some of the oldest and most widespread creation myths are ... involving the "Earth Mother".</label>
+        <p>a. those b. them c. they d. their</p>
+        @Html.TextArea("Comment5", new { @class = "form-control", rows = "1" })
+        <label>6. In ... , compact disk technology has almost made record albums obsolete.</label>
+        <p>a. the decade from  b. the decade since c. the past decade d. decade ago the</p>
+        @Html.TextArea("Comment6", new { @class = "form-control", rows = "1" })
+        <label>7. In the first few months of life, an infant learns how to lift its hands, how to smile and ... .</label>
+        <p>a. how its parents to recognize b. how to recognize its parents c. to be recognizing its parents d. the recognizing of its parents</p>
+        @Html.TextArea("Comment7", new { @class = "form-control", rows = "1" })
+        <label>8. Juana Inez de la Cruz ... Mexico's greatest female poet.</label>
+        <p>a. considered b. considered to be c. is considered to be d. is consideration</p>
+        @Html.TextArea("Comment8", new { @class = "form-control", rows = "1" })
+        <label>9. ... what is now San Salvador, Christopher Columbus believed that he had found Japan.</label>
+        <p>a. He reached b. When did he reach c. Having reached d. Whether he reached</p>
+        @Html.TextArea("Comment9", new { @class = "form-control", rows = "1" })
+        <label>10. The principal purpose of aviation medicine is ... by people aboard an aircraft in flight.</label>
+        <p>a. to study the stress experienced b. study the experienced stress c. to study stress experiencing d. studying the stress experience</p>
+        @Html.TextArea("Comment10", new { @class = "form-control", rows = "1" })
+
+        <h2>Грамматическая часть</h2>
+        <label>11. The queen of Great Britain is not ... absolute monarch.</label>
+        <p>a. the b. an c. -</p>
+         @Html.TextArea("Comment11", new { @class = "form-control", rows = "1" })
+        <label>12. Open ... door, please.</label>
+        <p>a. the b. a c. -</p>
+         @Html.TextArea("Comment12", new { @class = "form-control", rows = "1" })
+       <label>13. Are you standing in the corridor? Come ... please.</label>
+        <p>a. in b. into c. out d. -</p>
+         @Html.TextArea("Comment13", new { @class = "form-control", rows = "1" })
+        <label>14. Who is ... duty today?</label>
+        <p>a. of b. in c. on d. for</p>
+         @Html.TextArea("Comment14", new { @class = "form-control", rows = "1" })
+        <label>15. ... what languages are you speaking?</label>
+        <p>a. at b. - c. on d. in</p>
+         @Html.TextArea("Comment15", new { @class = "form-control", rows = "1" })
+        <label>16. There is a picture ... sofa.</label>
+        <p>a. around b. in c. on d. over</p>
+         @Html.TextArea("Comment16", new { @class = "form-control", rows = "1" })
+        <label>17. Now she ... difficulty in putting fact in order.</label>
+        <p>a. is having b. has been having c. had</p>
+         @Html.TextArea("Comment17", new { @class = "form-control", rows = "1" })
+        <label>18. My brother ... music lessons for three years now.</label>
+        <p>a. have taken b. has been taking c. took</p>
+         @Html.TextArea("Comment18", new { @class = "form-control", rows = "1" })
+        <label>19. Perhaps in the future men ... on the sea, away from the crowded and noisy cities on land.</label>
+        <p>a. will live b. would live c. are living</p>
+         @Html.TextArea("Comment19", new { @class = "form-control", rows = "1" })
+        <label>20. There ... ten pens and a magazine on the table.</label>
+        <p>a. is b. are c. am d. was</p>
+         @Html.TextArea("Comment20", new { @class = "form-control", rows = "1" })
+        <label>21. Police, fire fighters, newspaper reporters and radio broadcasters ... work on holiday in the USA.</label>
+        <p>a. could b. might c. must</p>
+         @Html.TextArea("Comment21", new { @class = "form-control", rows = "1" })
+        <label>22. ... you ... get up early yesterday to meet the delegation at the airport?</label>
+        <p>a. Did ... have to b. Had ... to c. Have ... had to</p>
+         @Html.TextArea("Comment22", new { @class = "form-control", rows = "1" })
+        <label>23. We ... learn from the past.</label>
+        <p>a. may b. need c. must</p>
+         @Html.TextArea("Comment23", new { @class = "form-control", rows = "1" })
+        <label>24. There are …(мало) foreign students in our Institute.</label>
+        <p>a. few b. a few c. some d. a lot of</p>
+         @Html.TextArea("Comment24", new { @class = "form-control", rows = "1" })
+
+
+
+
+
+
+
+
+    </div>
+    <input type="submit" value="Отпарвить" class="btn" />
+}
+
+
+
+
+
+
+

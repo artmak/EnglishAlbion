@@ -14,11 +14,12 @@
 @using (Html.BeginForm("Feedback", "Home", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
 {
     @Html.ValidationSummary()
-    <div class="form-group">
+   <div class="form-group">
         <label>Имя:</label>
         <div class="input-group">
             <span class="input-group-addon glyphicon glyphicon-user"></span>
         @Html.TextBox("Name", null, new { @class = "form-control", placeholder = "Введите Ваше Имя" })
+            
             </div>
         <label>Email:</label>
         @Html.TextBox("Email", null, new { @class = "form-control", placeholder = "Введите email" })

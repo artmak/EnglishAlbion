@@ -1,0 +1,19 @@
+@*HTML View for UserMailer#TestPage*@
+@model EnAlbionV1._0.Models.ResponseTest
+
+
+@Html.DisplayFor(m => m)
+<ul class="list-group">
+
+ @foreach (var item in Model.Answers) 
+     { 
+        
+        <li class="list-group-item">
+            @item
+        </li>
+        
+        
+    }
+</ul>
+
+    

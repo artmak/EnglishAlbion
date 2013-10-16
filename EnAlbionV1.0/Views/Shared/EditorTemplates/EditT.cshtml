@@ -2,14 +2,6 @@
 
 <div>
 
-    <ul class="list-group">
-    @foreach (var item in Model.Value) { 
-        
-        <li class="list-group-item">
-            @item.Key - <span>@item.Value</span> <input data-group="@Model.Key" type="checkbox" value="@item.Value"/>
-        </li>
-        
-        
-    }
-        </ul>
+    
+            @Html.DropDownListFor(m => m, Model.Value.Select(g => new SelectListItem(){ Text = g.Value, Value=g.Key.ToString()}))
 </div>

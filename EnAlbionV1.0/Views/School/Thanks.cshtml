@@ -1,0 +1,44 @@
+﻿@model EnAlbionV1._0.Models.ResponseTest
+
+@{
+    
+    ViewBag.Title = "Спасибо за прохождение теста";
+}
+<div class="text-center">
+<img class="img-rounded" src="~/Content/images/main/top-test.jpg" />
+    </div>
+
+<div class="featurette">
+    <h2 class="featurette-heading">Спасибо, <span class="muted">@Model.Name!</span></h2>
+    <p class="lead">Мы Вам перезвоним по указанному телефону @Model.Phone. Спасибо!</p>
+    
+    <p class="lead">Текст Вашего сообщения: -  @Model.Comment</p>
+    @*<p class="lead">Ваши ответы:</p>
+    <ol>
+	<li>@Model.Comment1</li>
+	<li>@Model.Comment2</li>
+	<li>@Model.Comment3</li>
+	<li>@Model.Comment4</li>
+	<li>@Model.Comment5</li>
+	<li>@Model.Comment6</li>
+	<li>@Model.Comment7</li>
+	<li>@Model.Comment8</li>
+	<li>@Model.Comment9</li>
+	<li>@Model.Comment10</li>
+	<li>@Model.Comment11</li>
+	<li>@Model.Comment12</li>
+	<li>@Model.Comment13</li>
+	<li>@Model.Comment14</li>
+	<li>@Model.Comment15</li>
+	<li>@Model.Comment16</li>
+	<li>@Model.Comment17</li>
+	<li>@Model.Comment18</li>
+	<li>@Model.Comment19</li>
+	<li>@Model.Comment20</li>
+	<li>@Model.Comment21</li>
+	<li>@Model.Comment22</li>
+	<li>@Model.Comment23</li>
+	<li>@Model.Comment24</li>
+</ol>*@
+</div>
+@Html.ActionLink("Вернуться на главную", "About", "Home", null, new {@class="btn btn-info", title="Вернуться на главную"}) 

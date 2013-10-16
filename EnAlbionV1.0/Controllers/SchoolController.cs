@@ -1,4 +1,5 @@
-﻿using EnAlbionV1._0.Models;
+﻿using EnAlbionV1._0.Mailers;
+using EnAlbionV1._0.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -40,7 +41,7 @@ namespace EnAlbionV1._0.Controllers
             return View();
         }
         public Response getResponse()
-        { 
+        {
             var ret = new Response(new ResponseItem[]
             {
                 new ResponseItem(new KeyValuePair<char, string>[]
@@ -206,21 +207,38 @@ namespace EnAlbionV1._0.Controllers
                     new KeyValuePair<char, string>('d', "a lot of")
                 }){ question="24. There are …(мало) foreign students in our Institute."},
                                 
-            }); 
-   
+            });
+
             return ret;
+        }
+        private IUserMailer _userMailer = new UserMailer();
+        public IUserMailer UserMailer
+        {
+            get { return _userMailer; }
+            set { _userMailer = value; }
         }
         [HttpGet]
         public ViewResult TestPage()
         {
-               return View(getResponse());
+           
+            return View(getResponse());
             
         }
         [HttpPost]
-        public ViewResult TestPage(Response resp)
+        public ViewResult TestPage(ResponseTest tresp)
         {
-            resp.Submit();
-            return View("Thanks", resp);
+            UserMailer.TestPage(tresp).Send();
+
+            if (ModelState.IsValid)
+            {
+                //responseFeedback.Submit();
+
+                return View("Thanks", tresp);
+            }
+            else
+            {
+                return View();
+            }
            
         }
         

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using EnAlbionV1._0.Models;
+using EnAlbionV1._0.Mailers;
 
 namespace EnAlbionV1._0.Controllers
 {
@@ -28,7 +29,13 @@ namespace EnAlbionV1._0.Controllers
         {
             return View();
         }
-        
+
+        private IUserMailer _userMailer = new UserMailer();
+        public IUserMailer UserMailer
+        {
+            get { return _userMailer; }
+            set { _userMailer = value; }
+        }
     [HttpGet]
         public ViewResult Feedback() 
         {
@@ -37,9 +44,13 @@ namespace EnAlbionV1._0.Controllers
     [HttpPost]
     public ViewResult Feedback(Response responseFeedback)
     {
+
+        UserMailer.Feedback(responseFeedback).Send();
+
         if (ModelState.IsValid)
         {
-            responseFeedback.Submit();
+            //responseFeedback.Submit();
+
             return View("Thanks", responseFeedback);
         }
         else {
