@@ -1,13 +1,75 @@
 ﻿@{
-    ViewBag.Title = "Video";
+    ViewBag.Title = "Видео материалы для обучения и самообразования";
 }
+<style>
+    .about_course, .video_video, .video_podcasts {
+        margin: 10px;
+    }
+</style>
 
-<h2>Video</h2>
-<div class="row">
-    <div class="col-sx-6 col-md-4">
-        <video poster="https://googledrive.com/host/0B2nIyMekjWaIVmpxUDdlWG9NaWc/Speakout_Elementary/Speakout_Elementary.jpg" preload="metadata" controls="controls" tabindex="0">
-            <source src="https://googledrive.com/host/0B2nIyMekjWaIVmpxUDdlWG9NaWc/Speakout_Elementary/Podcasts/Podcast%20Elementary%2001.MP4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
-            Тег video не поддерживается вашим браузером. <a href="https://googledrive.com/host/0B2nIyMekjWaIVmpxUDdlWG9NaWc/Speakout_Elementary/Podcasts/Podcast%20Elementary%2001.MP4">Скачайте видео</a>.
-        </video>
-    </div>
+<h2>@Html.ViewBag.Title</h2>
+@Html.Partial("Tutorials/speakoutPartial")
+
+
+
+<hr class="featurette-divider">
+<div>
+<a id="starter"></a>
+@Html.Partial("Tutorials/Speakout_Starter/SS_Partial")
+<hr class="featurette-divider">
+@Html.Partial("Tutorials/Speakout_Starter/podcasts_SS_Partial")
+@Html.ActionLink("Если Вам понравился курс Starter, напишите нам!", "Feedback", "Home", null, new {@class="btn btn-primary btn-lg" })
+</div>
+
+
+<hr class="featurette-divider">
+<a id="elementary"></a>
+<div>
+
+@Html.Partial("Tutorials/Speakout_Elementary/SE_Partial")
+    <hr class="featurette-divider">
+@Html.Partial("Tutorials/Speakout_Elementary/podcasts_SE_Partial")
+    @Html.ActionLink("Если Вам понравился курс Elementary, напишите нам!", "Feedback", "Home", null, new {@class="btn btn-info btn-lg" })
+
+</div>
+<hr class="featurette-divider">
+<a id="pre-intermediate"></a>
+<div>
+
+@Html.Partial("Tutorials/Speakout_Pre-Intermediate/PI_Partial")
+    <hr class="featurette-divider">
+@Html.Partial("Tutorials/Speakout_Pre-Intermediate/video_PI_Partial")
+    @Html.ActionLink("Если Вам понравился курс Pre-Intermediate, напишите нам!", "Feedback", "Home", null, new {@class="btn btn-default btn-lg" })
+
+</div>
+
+<hr class="featurette-divider">
+<a id="intermediate"></a>
+<div>
+
+@Html.Partial("Tutorials/Speakout_Intermediate/I_Partial")
+    <hr class="featurette-divider">
+@Html.Partial("Tutorials/Speakout_Intermediate/video_I_Partial")
+    @Html.ActionLink("Если Вам понравился курс Intermediate, напишите нам!", "Feedback", "Home", null, new {@class="btn btn-warning btn-lg" })
+
+</div>
+<hr class="featurette-divider">
+<a id="upper-intermediate"></a>
+<div>
+
+@Html.Partial("Tutorials/Speakout_Elementary/SE_Partial")
+    <hr class="featurette-divider">
+@Html.Partial("Tutorials/Speakout_Elementary/video_SE_Partial")
+    @Html.ActionLink("Если Вам понравился курс Upper-Intermediate, напишите нам!", "Feedback", "Home", null, new {@class="btn btn-success btn-lg" })
+
+</div>
+<hr class="featurette-divider">
+<a id="advanced"></a>
+<div>
+
+@Html.Partial("Tutorials/Speakout_Elementary/SE_Partial")
+    <hr class="featurette-divider">
+@Html.Partial("Tutorials/Speakout_Elementary/video_SE_Partial")
+    @Html.ActionLink("Если Вам понравился курс Advanced, напишите нам!", "Feedback", "Home", null, new {@class="btn btn-danger btn-lg" })
+
 </div>

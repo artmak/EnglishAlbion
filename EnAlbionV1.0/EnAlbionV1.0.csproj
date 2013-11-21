@@ -298,6 +298,27 @@
     <Content Include="Views\Other\Books.cshtml" />
     <Content Include="Views\Other\Video.cshtml" />
     <Content Include="Views\Other\Audio.cshtml" />
+    <Content Include="Views\Shared\Tutorials\Speakout_Elementary\SE_Partial.cshtml" />
+    <Content Include="Views\Shared\Tutorials\Speakout_Elementary\video_SE_Partial.cshtml" />
+    <Content Include="Views\Shared\Tutorials\Speakout_Elementary\audio_SE_Partial.cshtml" />
+    <Content Include="Views\Shared\Tutorials\Speakout_Elementary\manuals_SE_Partial.cshtml" />
+    <Content Include="Views\Shared\Tutorials\Speakout_Pre-Intermediate\audio_PI_Partial.cshtml" />
+    <Content Include="Views\Shared\Tutorials\Speakout_Pre-Intermediate\manuals_PI_Partial.cshtml" />
+    <Content Include="Views\Shared\Tutorials\Speakout_Pre-Intermediate\podcats_PI_Partial.cshtml" />
+    <Content Include="Views\Shared\Tutorials\Speakout_Pre-Intermediate\PI_Partial.cshtml" />
+    <Content Include="Views\Shared\Tutorials\Speakout_Pre-Intermediate\video_PI_Partial.cshtml" />
+    <Content Include="Views\Shared\Tutorials\Speakout_Starter\audio_SS_Partial.cshtml" />
+    <Content Include="Views\Shared\Tutorials\Speakout_Starter\manuals_SS_Partial.cshtml" />
+    <Content Include="Views\Shared\Tutorials\Speakout_Starter\podcasts_SS_Partial.cshtml" />
+    <Content Include="Views\Shared\Tutorials\Speakout_Starter\SS_Partial.cshtml" />
+    <Content Include="Views\Shared\Tutorials\Speakout_Starter\video_SS_Partial.cshtml" />
+    <Content Include="Views\Shared\Tutorials\speakoutPartial.cshtml" />
+    <Content Include="Views\Shared\Tutorials\Speakout_Intermediate\audio_I_Partial.cshtml" />
+    <Content Include="Views\Shared\Tutorials\Speakout_Intermediate\manuals_I_Partial.cshtml" />
+    <Content Include="Views\Shared\Tutorials\Speakout_Intermediate\I_Partial.cshtml" />
+    <Content Include="Views\Shared\Tutorials\Speakout_Intermediate\podcats_I_Partial.cshtml" />
+    <Content Include="Views\Shared\Tutorials\Speakout_Intermediate\video_I_Partial.cshtml" />
+    <Content Include="Views\Shared\Tutorials\Speakout_Elementary\podcasts_SE_Partial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
