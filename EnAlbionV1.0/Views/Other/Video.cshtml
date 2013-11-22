@@ -7,4 +7,37 @@
     }
 </style>
 
-<h2>@Html.ViewBag.Title</h2>
+<h2>@ViewBag.Title</h2>
+<div class="row">
+    <div class="jumbotron col-md-6 img-thumbnail" >
+        <h2>Learn English with 5 Jokes</h2>
+        <div>
+            <iframe width="500" height="281" src="//www.youtube.com/embed/waCR-Cdm6tM?rel=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+    <div class="jumbotron col-md-6 img-thumbnail">
+        <h2>My Blackberry is not working!</h2>
+        <div>
+            <iframe width="500" height="281" src="//www.youtube.com/embed/Ma-HOwObC_Y?rel=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+<hr class="featurette-divider">
+@Html.ActionLink("Если Вам понравилось, напишите нам!", "Feedback", "Home", null, new { @class = "btn btn-primary" })
+<hr class="featurette-divider">
+
+<div class="row">
+    <div class="jumbotron col-md-6 img-thumbnail">
+        <h2>Starter 1</h2>
+        <div>
+            <iframe width="500" height="375" src="//www.youtube.com/embed/p72reGkuv8E?rel=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+    <div class="jumbotron col-md-6 img-thumbnail">
+        <h2>Starter 11</h2>
+        <div>
+            <iframe width="500" height="375" src="//www.youtube.com/embed/lnZybWYJKac?rel=0" frameborder="0" allowfullscreen></iframe>        </div>
+    </div>
+</div>
