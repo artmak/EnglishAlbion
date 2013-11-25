@@ -11,7 +11,7 @@
     <meta name='yandex-verification' content='6e23d3b060a11a83' />
     <link rel="shortcut icon" href="@Url.Content("~/Content/images/ico/favicon.png")">
 
-    <title>@ViewBag.Title - English Albion - Информационный центр</title>
+    <title>Мы переехали с englishalbion.kiev.ua @ViewBag.Title - English Albion - Информационный центр</title>
     <link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" />
     <!-- Bootstrap core CSS -->
     <link href="~/Content/bootstrap/css/bootstrap.css" rel="stylesheet" />
@@ -127,12 +127,7 @@
             <div class="item active">
                 <img src="~/Content/images/carousel/02.jpg" />
                 <div class="container">
-                    <div class="carousel-caption" style="color: #ffffff !important;">
-                        <h1>ВНИМАНИЕ! НАБОР НА НОВЫЕ КУРСЫ</h1>
-                        <p>Стартует курс @Html.ActionLink("«Я ВЫХОЖУ ЗАМУЖ» STARTER", "Feedback", "Home", null, new { @class = "btn btn-lg btn-primary", title="ВНИМАНИЕ! НАБОР НА НОВЫЕ КУРСЫ"})</p>
-                        <p>Начинает курс мини группа @Html.ActionLink("Elementary (Общий курс)", "Feedback", "Home", null, new { @class = "btn btn-lg btn-primary", title="ВНИМАНИЕ! НАБОР НА НОВЫЕ КУРСЫ" })</p>
-                        <p>Приятная новость месяца - объявляется набор в новую группу - @Html.ActionLink("«Курс выходного дня» ", "Feedback", "Home", null, new { @class = "btn btn-lg btn-primary", title="ВНИМАНИЕ! НАБОР НА НОВЫЕ КУРСЫ" })</p>
-                    </div>
+                    @Html.Partial("Carousel/carousel_div_container")
                 </div>
             </div>
             <div class="item">
@@ -163,12 +158,7 @@
             <div class="item">
                 <img src="~/Content/images/carousel/01.jpg" />
                 <div class="container">
-                    <div class="carousel-caption" style="color: #000 !important;">
-                        <h1>ВНИМАНИЕ! НАБОР НА НОВЫЕ КУРСЫ</h1>
-                        <p>Стартует курс @Html.ActionLink("«Я ВЫХОЖУ ЗАМУЖ» STARTER", "Feedback", "Home", null, new { @class = "btn btn-lg btn-primary", title = "ВНИМАНИЕ! НАБОР НА НОВЫЕ КУРСЫ" })</p>
-                        <p>Начинает курс мини группа @Html.ActionLink("Elementary (Общий курс)", "Feedback", "Home", null, new { @class = "btn btn-lg btn-primary", title = "ВНИМАНИЕ! НАБОР НА НОВЫЕ КУРСЫ" })</p>
-                        <p>Приятная новость месяца - объявляется набор в новую группу - @Html.ActionLink("«Курс выходного дня» ", "Feedback", "Home", null, new { @class = "btn btn-lg btn-primary", title = "ВНИМАНИЕ! НАБОР НА НОВЫЕ КУРСЫ" })</p>
-                    </div>
+                    @Html.Partial("Carousel/carousel_div_container")
                 </div>
 
             </div>
@@ -176,12 +166,7 @@
             <div class="item">
                 <img src="~/Content/images/carousel/03.jpg" />
                 <div class="container">
-                    <div class="carousel-caption" style="color: #000 !important;">
-                        <h1>ВНИМАНИЕ! НАБОР НА НОВЫЕ КУРСЫ</h1>
-                        <p>Стартует курс @Html.ActionLink("«Я ВЫХОЖУ ЗАМУЖ» STARTER", "Feedback", "Home", null, new { @class = "btn btn-lg btn-primary", title = "ВНИМАНИЕ! НАБОР НА НОВЫЕ КУРСЫ" })</p>
-                        <p>Начинает курс мини группа @Html.ActionLink("Elementary (Общий курс)", "Feedback", "Home", null, new { @class = "btn btn-lg btn-primary", title = "ВНИМАНИЕ! НАБОР НА НОВЫЕ КУРСЫ" })</p>
-                        <p>Приятная новость месяца - объявляется набор в новую группу - @Html.ActionLink("«Курс выходного дня» ", "Feedback", "Home", null, new { @class = "btn btn-lg btn-primary", title = "ВНИМАНИЕ! НАБОР НА НОВЫЕ КУРСЫ" })</p>
-                    </div>
+                    @Html.Partial("Carousel/carousel_div_container")
                 </div>
             </div>
             @*<div class="item">
@@ -197,23 +182,13 @@
             <div class="item">
                 <img src="~/Content/images/main/top-club.jpg" />
                 <div class="container">
-                    <div class="carousel-caption" style="color: #fff !important;">
-                        <h1>ВНИМАНИЕ! НАБОР НА НОВЫЕ КУРСЫ</h1>
-                        <p>Стартует курс @Html.ActionLink("«Я ВЫХОЖУ ЗАМУЖ» STARTER", "Feedback", "Home", null, new { @class = "btn btn-lg btn-primary", title = "ВНИМАНИЕ! НАБОР НА НОВЫЕ КУРСЫ" })</p>
-                        <p>Начинает курс мини группа @Html.ActionLink("Elementary (Общий курс)", "Feedback", "Home", null, new { @class = "btn btn-lg btn-primary", title = "ВНИМАНИЕ! НАБОР НА НОВЫЕ КУРСЫ" })</p>
-                        <p>Приятная новость месяца - объявляется набор в новую группу - @Html.ActionLink("«Курс выходного дня» ", "Feedback", "Home", null, new { @class = "btn btn-lg btn-primary", title = "ВНИМАНИЕ! НАБОР НА НОВЫЕ КУРСЫ" })</p>
-                    </div>
+                    @Html.Partial("Carousel/carousel_div_container")
                 </div>
             </div>
             <div class="item">
                 <img src="~/Content/images/main/top-diploma.jpg" />
                 <div class="container">
-                    <div class="carousel-caption" style="color: #000 !important;">
-                        <h1>ВНИМАНИЕ! НАБОР НА НОВЫЕ КУРСЫ</h1>
-                        <p>Стартует курс @Html.ActionLink("«Я ВЫХОЖУ ЗАМУЖ» STARTER", "Feedback", "Home", null, new { @class = "btn btn-lg btn-primary", title = "ВНИМАНИЕ! НАБОР НА НОВЫЕ КУРСЫ" })</p>
-                        <p>Начинает курс мини группа @Html.ActionLink("Elementary (Общий курс)", "Feedback", "Home", null, new { @class = "btn btn-lg btn-primary", title = "ВНИМАНИЕ! НАБОР НА НОВЫЕ КУРСЫ" })</p>
-                        <p>Приятная новость месяца - объявляется набор в новую группу - @Html.ActionLink("«Курс выходного дня» ", "Feedback", "Home", null, new { @class = "btn btn-lg btn-primary", title = "ВНИМАНИЕ! НАБОР НА НОВЫЕ КУРСЫ" })</p>
-                    </div>
+                    @Html.Partial("Carousel/carousel_div_container")
                 </div>
             </div>
 

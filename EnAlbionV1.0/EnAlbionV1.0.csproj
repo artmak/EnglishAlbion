@@ -299,6 +299,7 @@
     <Content Include="Views\Other\Books.cshtml" />
     <Content Include="Views\Other\Video.cshtml" />
     <Content Include="Views\Other\Audio.cshtml" />
+    <Content Include="Views\Shared\Carousel\carousel_div_container.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
