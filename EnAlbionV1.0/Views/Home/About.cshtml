@@ -1,5 +1,6 @@
 ﻿@{
     ViewBag.Title = "Информационный центр «Альбион»";
+    ViewBag.EA = "Информационного центра English Albion";
 }
 
 <div class="row featurette">
@@ -30,7 +31,15 @@
 
 <div class="row">
     <div class="col-md-8">
-        <h2>Новости Информационного центра EnglishAlbion - News - Nouvelles - Nachrichten - 新聞</h2>
+        <h2>Новости @ViewBag.EA - News - Nouvelles - Nachrichten - 新聞</h2>
+        <hr class="featurette-divider" />
+        <div  >
+            <h2>Акции @ViewBag.EA</h2>
+            <h3><span class="label label-danger">Скоро!!!</span>&nbsp;ДЕКАБРЬ - МЕСЯЦ ПОДАРКОВ</h3>
+            @Html.ActionLink("Перейти на страницу с акцией", "Actions", "News", null, new { @class = "btn btn-info btn-lg", title="Перейти на страницу с акцией" })
+        </div>
+        <hr class="featurette-divider" />
+
         <div>
             <h2 class="red tdub"><span class="glyphicon glyphicon-bullhorn"></span>&nbsp;КУРС АНГЛИЙСКОГО "Я ВЫХОЖУ ЗАМУЖ"</h2>
             <div>
