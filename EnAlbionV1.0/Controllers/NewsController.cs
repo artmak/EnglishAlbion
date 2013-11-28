@@ -15,6 +15,10 @@ namespace EnAlbionV1._0.Controllers
         {
             return View();
         }
+        public ActionResult Actions() 
+        {
+            return View();
+        }
 
     }
 }
