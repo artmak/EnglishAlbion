@@ -28,10 +28,14 @@
     <link href="~/Content/MainStyle.css" rel="stylesheet" />
 
     <link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+        
+    </style>
 </head>
 <!-- NAVBAR
 ================================================== -->
 <body>
+
     <div class="navbar-wrapper">
         <div class="container">
 
@@ -55,13 +59,13 @@
                                     <li>@Html.ActionLink("Из чего состоят занатия", "OurClasses", "Service")</li>
                                     <li>@Html.ActionLink("Фото", "Photo", "Service")</li>
                                     @*<li class="divider"></li>
-                                    <li class="dropdown-header" title="Групповые занятия">Групповые занятия</li>
-                                    <li><a href="/group/adult.html" title="Для взрослых">Для взрослых</a></li>
-                                    <li><a href="/group/teens.html" title="Для детей">Для детей</a></li>
-                                    <li class="divider"></li>
-                                    <li class="dropdown-header" title="Индивидуальные занятия">Индивидуальные занятия</li>
-                                    <li><a href="/individual/adult.html" class="first" title="Для взрослых"><span>Для взрослых</span></a></li>
-                                    <li><a href="/individual/teens.html" class="last" title="Для детей"><span>Для детей</span></a></li>*@
+                                        <li class="dropdown-header" title="Групповые занятия">Групповые занятия</li>
+                                        <li><a href="/group/adult.html" title="Для взрослых">Для взрослых</a></li>
+                                        <li><a href="/group/teens.html" title="Для детей">Для детей</a></li>
+                                        <li class="divider"></li>
+                                        <li class="dropdown-header" title="Индивидуальные занятия">Индивидуальные занятия</li>
+                                        <li><a href="/individual/adult.html" class="first" title="Для взрослых"><span>Для взрослых</span></a></li>
+                                        <li><a href="/individual/teens.html" class="last" title="Для детей"><span>Для детей</span></a></li>*@
                                     <li class="divider"></li>
                                     <li>@Html.ActionLink("Корпоративное обучение", "Training", "Service")</li>
                                     <li>@Html.ActionLink("Летний интенсив", "SummerIntensive", "Service")</li>
@@ -80,10 +84,10 @@
                                     <li>@Html.ActionLink("Китайский", "Chinese", "School")</li>
                                     <li>@Html.ActionLink("Французский", "French", "School")</li>
                                     @* <li class="divider"></li>
-                                    <li class="dropdown-header">Для клиентов</li>
-                                    <li><a href="#">Корпоративное обучение</a></li>
-                                    <li><a href="#">Скидки</a></li>
-                                    <li><a href="#">ЗНО</a></li>*@
+                                        <li class="dropdown-header">Для клиентов</li>
+                                        <li><a href="#">Корпоративное обучение</a></li>
+                                        <li><a href="#">Скидки</a></li>
+                                        <li><a href="#">ЗНО</a></li>*@
                                 </ul>
                             </li>
                             <li class="dropdown">
@@ -143,7 +147,7 @@
                             (Подол)
                             <br />
                             <abbr title="Наш городской телефон"><span class="glyphicon glyphicon-phone-alt" style="font-size: 10pt;"></span>tel:</abbr>
-                            (044) 360−70−07 
+                            (044) 360−70−07
                             <br />
                             <abbr title="Наши мобильные телефоны"><span class="glyphicon glyphicon-earphone" style="font-size: 10pt;"></span>mob:</abbr>
                             (050) 443-55-56<br />
@@ -171,15 +175,15 @@
                 </div>
             </div>
             @*<div class="item">
-                <img src="~/Content/images/carousel/03.jpg" />
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>One more for good measure.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-large btn-primary" href="#">Browse gallery</a></p>
+                    <img src="~/Content/images/carousel/03.jpg" />
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>One more for good measure.</h1>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn-large btn-primary" href="#">Browse gallery</a></p>
+                        </div>
                     </div>
-                </div>
-            </div>*@
+                </div>*@
             <div class="item">
                 <img src="~/Content/images/main/top-club.jpg" />
                 <div class="container">
@@ -200,37 +204,39 @@
         <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
     </div>
     <!-- /.carousel -->
-
-
-
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
     <div class="container marketing">
-
+        <div id="snowing">
+            <a class="" href="@Url.Action("Actions", "News")"><div class="snow img-circle" id="snow1" title="Акция - Бесплатных уроков - 5 Схвати снежинку и переташи=)"></div></a>
+            <a class="" href="@Url.Action("Actions", "News")"><div class="snow img-circle" id="snow2" title="Акция - Скидки на обучение 15 % - 5 Схвати снежинку и переташи=)"></div></a>
+            <a class="" href="@Url.Action("Actions", "News")"> <div class="snow img-circle" id="snow3" title="Акция - Скидки на обучение 10 % - 5 Схвати снежинку и переташи=)"></div></a>
+            <a class="" href="@Url.Action("Actions", "News")"> <div class="snow img-circle" id="snow4" title="Акция - Скидки на обучение 5 % - 10 Схвати снежинку и переташи=)"></div></a>
+            <a class="" href="@Url.Action("Actions", "News")"> <div class="snow img-circle" id="snow5" title="Акция Схвати снежинку и переташи=)"></div></a>
+            <a class="" href="@Url.Action("Actions", "News")"> <div class="snow img-circle" id="snow6" title="Акция Схвати снежинку и переташи=)"></div></a>
+            <a class="" href="@Url.Action("Actions", "News")"> <div class="snow img-circle" id="snow7" title="Акция Схвати снежинку и переташи=)"></div></a>
+        </div>
         @RenderBody()
         <!-- /.container -->
-
-
-
         <!-- FOOTER -->
         <footer>
             <p class="pull-right floating text-center">
-                <a id="btop" href="#" class="btn btn-inverse">Вверх</a> 
-                <br /> <br /> 
-            <script type="text/javascript">
-                document.write(VK.Share.button(false,{type: "", text: "Поделиться ссылкой c ВКонтакте"}));
-            </script>
+                <a id="btop" href="#" class="btn btn-inverse">Вверх</a>
+                <br /> <br />
+                <script type="text/javascript">
+                    document.write(VK.Share.button(false, { type: "", text: "Поделиться ссылкой c ВКонтакте" }));
+                </script>
             </p>
             <p style="font-family: 'Pathway Gothic One', sans-serif;">&copy;  Содан комапнией <a href="https://plus.google.com/100082264739809883836?rel=author" target="_blank">ArtMakarenko</a> в 2013. Созан на <a href="http://www.asp.net/get-started" class="btn btn-info btn-xs">ASP.Net MVC 4.0</a></p>
             <!-- Yandex.Metrika informer -->
             <a href="http://metrika.yandex.ru/stat/?id=22235176&amp;from=informer"
-                target="_blank" rel="nofollow">
+               target="_blank" rel="nofollow">
                 <img src="//bs.yandex.ru/informer/22235176/2_0_FFFFFFFF_FFFFFFFF_0_pageviews"
-                    style="width: 80px; height: 31px; border: 0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры)" onclick="try{Ya.Metrika.informer({i:this,id:22235176,lang:'ru'});return false}catch(e){}" /></a>
+                     style="width: 80px; height: 31px; border: 0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры)" onclick="try{Ya.Metrika.informer({i:this,id:22235176,lang:'ru'});return false}catch(e){}" />
+            </a>
             <!-- /Yandex.Metrika informer -->
-
             <!-- Yandex.Metrika counter -->
             <script type="text/javascript">
                 (function (d, w, c) {
@@ -265,9 +271,11 @@
             </noscript>
             <!-- /Yandex.Metrika counter -->
             <a href="https://www.facebook.com/profile.php?id=100002274157194" target="_blank" title="Мы на facebook">
-                <img src="~/Content/images/social/Facebook_logo_(square).png" width="40" height="40" /></a>
+                <img src="~/Content/images/social/Facebook_logo_(square).png" width="40" height="40" />
+            </a>
             <a href="http://vk.com/id117943839" target="_blank" title="Найти нас ВКонтакте">
-                <img src="~/Content/images/social/VKontakte.svg.png" height="40" /></a>
+                <img src="~/Content/images/social/VKontakte.svg.png" height="40" />
+            </a>
         </footer>
 
     </div>
@@ -294,10 +302,27 @@
 
     <script type="text/javascript">
         $(function () {
+
+            // Snow start
+            var $rot_div = $(".snow"), degree = 0, timer;
+            rotate();
+            function rotate() {
+
+                $rot_div.css({ WebkitTransform: 'rotate(' + degree + 'deg)' });
+                $rot_div.css({ '-moz-transform': 'rotate(' + degree + 'deg)' });
+                timer = setTimeout(function () { ++degree; rotate(); });
+            }
+            // Snow end
+            $(".snow").draggable();
+
+
+
+
+
             $(".sticker90").sticky({ topSpacing: 90, center: true });
             $(".sticker150").sticky({ topSpacing: 150, center: true });
             $(".acc").accordion();
-            
+
             $(document).tooltip({
                 position: {
                     my: "center bottom-20",
