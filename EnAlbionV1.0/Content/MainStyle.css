@@ -80,7 +80,7 @@ top: auto;
             position: absolute;
             left: 5%;
             
-            background: url("https://googledrive.com/host/0B2nIyMekjWaIVmpxUDdlWG9NaWc/images/snowflakes.jpg") -306px -266px no-repeat;
+            background: url("https://googledrive.com/host/0B2nIyMekjWaIVmpxUDdlWG9NaWc/images/snowflakes.png") -306px -266px no-repeat;
         }
 
         #snow2 {
@@ -88,35 +88,35 @@ top: auto;
             webkit-animation: anim1 52s; /* Safari and Chrome */
             position: absolute;
             left: 10%;
-            background: url("https://googledrive.com/host/0B2nIyMekjWaIVmpxUDdlWG9NaWc/images/snowflakes.jpg") -434px -262px no-repeat;
+            background: url("https://googledrive.com/host/0B2nIyMekjWaIVmpxUDdlWG9NaWc/images/snowflakes.png") -434px -262px no-repeat;
         }
         #snow3 {
             animation: anim1 53s;
             webkit-animation: anim1 53s; /* Safari and Chrome */
             position: absolute;
             left: 20%;
-            background: url("https://googledrive.com/host/0B2nIyMekjWaIVmpxUDdlWG9NaWc/images/snowflakes.jpg") -431px -136px no-repeat;
+            background: url("https://googledrive.com/host/0B2nIyMekjWaIVmpxUDdlWG9NaWc/images/snowflakes.png") -431px -136px no-repeat;
         }
         #snow4 {
             animation: anim1 54s;
             webkit-animation: anim1 54s; /* Safari and Chrome */
             position: absolute;
             right: 5%;
-            background: url("https://googledrive.com/host/0B2nIyMekjWaIVmpxUDdlWG9NaWc/images/snowflakes.jpg") -371px -5px no-repeat;
+            background: url("https://googledrive.com/host/0B2nIyMekjWaIVmpxUDdlWG9NaWc/images/snowflakes.png") -371px -5px no-repeat;
         }
         #snow5 {
             animation: anim1 55s;
             webkit-animation: anim1 55s; /* Safari and Chrome */
             position: absolute;
             right: 10%;
-            background: url("https://googledrive.com/host/0B2nIyMekjWaIVmpxUDdlWG9NaWc/images/snowflakes.jpg") -371px -70px no-repeat;
+            background: url("https://googledrive.com/host/0B2nIyMekjWaIVmpxUDdlWG9NaWc/images/snowflakes.png") -371px -70px no-repeat;
         }
         #snow6 {
             animation: anim1 56s;
             webkit-animation: anim1 56s; /* Safari and Chrome */
             position: absolute;
             right: 12%;
-            background: url("https://googledrive.com/host/0B2nIyMekjWaIVmpxUDdlWG9NaWc/images/snowflakes.jpg") -371px -134px no-repeat;
+            background: url("https://googledrive.com/host/0B2nIyMekjWaIVmpxUDdlWG9NaWc/images/snowflakes.png") -371px -134px no-repeat;
         }
 
         #snow7 {
@@ -124,7 +124,7 @@ top: auto;
             webkit-animation: anim1 57s; /* Safari and Chrome */
             position: absolute;
             right: 20%;
-            background: url("https://googledrive.com/host/0B2nIyMekjWaIVmpxUDdlWG9NaWc/images/snowflakes.jpg") -124px -132px no-repeat;
+            background: url("https://googledrive.com/host/0B2nIyMekjWaIVmpxUDdlWG9NaWc/images/snowflakes.png") -124px -132px no-repeat;
         }
 
 
