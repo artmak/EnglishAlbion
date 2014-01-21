@@ -31,6 +31,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -301,6 +302,7 @@
     <Content Include="Views\Other\Audio.cshtml" />
     <Content Include="Views\Shared\Carousel\carousel_div_container.cshtml" />
     <Content Include="Views\News\Actions.cshtml" />
+    <Content Include="Views\News\Discounts.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
