@@ -209,7 +209,7 @@
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
     <div class="container marketing">
-        <div id="snowing">
+        @*<div id="snowing" >
             <a class="" href="@Url.Action("Actions", "News")"><div class="snow img-circle" id="snow1" title="Акция - Бесплатных уроков - 5 Схвати снежинку и переташи=)"></div></a>
             <a class="" href="@Url.Action("Actions", "News")"><div class="snow img-circle" id="snow2" title="Акция - Скидки на обучение 15 % - 5 Схвати снежинку и переташи=)"></div></a>
             <a class="" href="@Url.Action("Actions", "News")"> <div class="snow img-circle" id="snow3" title="Акция - Скидки на обучение 10 % - 5 Схвати снежинку и переташи=)"></div></a>
@@ -217,7 +217,7 @@
             <a class="" href="@Url.Action("Actions", "News")"> <div class="snow img-circle" id="snow5" title="Акция Схвати снежинку и переташи=)"></div></a>
             <a class="" href="@Url.Action("Actions", "News")"> <div class="snow img-circle" id="snow6" title="Акция Схвати снежинку и переташи=)"></div></a>
             <a class="" href="@Url.Action("Actions", "News")"> <div class="snow img-circle" id="snow7" title="Акция Схвати снежинку и переташи=)"></div></a>
-        </div>
+        </div>*@
         @RenderBody()
         <!-- /.container -->
         <!-- FOOTER -->
@@ -303,17 +303,17 @@
     <script type="text/javascript">
         $(function () {
 
-            // Snow start
-            var $rot_div = $(".snow"), degree = 0, timer;
-            rotate();
-            function rotate() {
+            //// Snow start
+            //var $rot_div = $(".snow"), degree = 0, timer;
+            //rotate();
+            //function rotate() {
 
-                $rot_div.css({ WebkitTransform: 'rotate(' + degree + 'deg)' });
-                $rot_div.css({ '-moz-transform': 'rotate(' + degree + 'deg)' });
-                timer = setTimeout(function () { ++degree; rotate(); });
-            }
-            // Snow end
-            $(".snow").draggable();
+            //    $rot_div.css({ WebkitTransform: 'rotate(' + degree + 'deg)' });
+            //    $rot_div.css({ '-moz-transform': 'rotate(' + degree + 'deg)' });
+            //    timer = setTimeout(function () { ++degree; rotate(); });
+            //}
+            //// Snow end
+            //$(".snow").draggable();
 
 
 
