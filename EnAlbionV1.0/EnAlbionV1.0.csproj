@@ -115,6 +115,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Controllers\OtherController.cs" />
@@ -275,6 +276,7 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tooltip.min.css" />
     <Content Include="Global.asax" />
+    <None Include="Properties\PublishProfiles\smarterasp.net.pubxml" />
     <None Include="Properties\PublishProfiles\web_deploy_enalbion.pubxml" />
     <None Include="Scripts\jquery-2.0.3.intellisense.js" />
     <Content Include="Scripts\shareVK.js" />
@@ -288,14 +290,18 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\Web.config" />
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Views\Other\Article.cshtml" />
     <Content Include="Views\Other\Books.cshtml" />
     <Content Include="Views\Other\Video.cshtml" />
@@ -303,6 +309,7 @@
     <Content Include="Views\Shared\Carousel\carousel_div_container.cshtml" />
     <Content Include="Views\News\Actions.cshtml" />
     <Content Include="Views\News\Discounts.cshtml" />
+    <Content Include="Views\Error\Error404.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
